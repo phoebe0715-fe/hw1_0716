@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0000001a;
+    width: 100%;
+    max-width: 600px;
+}
+
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.name-group, .pwd-group, .button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.name-group .form-subgroup,.pwd-group .form-subgroup,.button-group .form-subgroup {
+    flex: 1;
+}
+
+/* .pwd-group .form-subgroup {
+    flex: 1;
+}
+
+.button-group .form-subgroup {
+    flex: 1;
+} */
+
+#registerButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+} 
+
+#signinButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #5CB85C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#registerButton:hover {
+    background-color: #0056b3;
+}
+
+#signinButton:hover {
+    background-color: #4d934d;
+}
+
+@media screen and (max-width: 798px) {
+    .name-group, .pwd-group, .button-group  {
+        flex-direction: column;
+    }
+}
+
+#checkboxTerm {
+    margin-bottom: 15px
+}
+
+#tos {
+    color: #007bff
+}
+
+#register {
+    background-color: #007bff;
+    color: #fefbfb;
+    padding: 2px 5px;
+    margin: 5px 0px;
+    font-size: 0.8rem;
+}
+
+.agreement-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+  }
+
+.checkbox-group {
+    width: 30%;
+    min-width: 60px;
+  }

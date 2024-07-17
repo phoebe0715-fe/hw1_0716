@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="register-form">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <div class="name-group">
+                    <div class="form-subgroup">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="form-subgroup">
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="mobile" name="mobile" placeholder="Mobile No." required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <div class="pwd-group">
+                    <div class="form-subgroup">
+                        <input type="password" id="passwordReg" placeholder="Password" name="passwordReg" required>
+                    </div>
+                    <div class="form-subgroup">
+                        <input type="password" id="passwordConfirm" placeholder="Confirm Password"
+                            name="passwordConfirm" required>
+                    </div>
+                </div>
+
+            </div>
+            <div class="agreement-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="checkboxTerm" name="checkboxTerm">
+                    <label for="checkboxTerm"><strong>I Agree</strong></label>
+                </div>
+                <div class="tos-group">
+                    By clicking <a id="register" href="">Register</a> you agree to the <a href="" id="tos">Terms &
+                        Conditions</a> set out by this site, including our Cookie
+                    Use.
+                </div>
+            </div>
+            <div class="button-group">
+                <div class="form-subgroup">
+                    <button type="submit" id="registerButton">Register</button>
+                </div>
+                <div class="form-subgroup">
+                    <button type="submit" id="signinButton">Sign In</button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
